@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Quiz </title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+			crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class ="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="header">
+				<h1>SCIENCE QUIZ<h1>
+				</div>
+				<div class="start">Ready to test your knowledge!?..<br />Use the arrow to start</div><br />
+				<div class="nav">
+				<button class="arrow-btn"><img src="images/back.png" class="arrow" id ="back" alt="back"/></button>
+				<button class="arrow-btn"><img src="images/next.png" class="arrow" id ="next" alt="next"/></button>
+				</div><hr/>
+<!---------------------------------------------form 1---------------------------------------------->
+				<form  id  ="form1" class="form form-horizontal ">
+					<label for="question">1- Which planet in the solar system is the hottest?</label><br />
+						<button class="btn btn-success btn-lg correct" id="Venus">Venus</button>
+						<button class="btn btn-success btn-lg" id="Mercury">Mercury</button><br>
+						<button class="btn btn-success btn-lg"id="Mars">Mars</button>
+						<button class="btn btn-success btn-lg"id="Earth">Earth</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-1 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-1" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-1" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-1" class="empty"></span></div>
+							</div>
+						</div>	
+					</div>
+				</form>
+<!---------------------------------------------form 2---------------------------------------------->
+				<form  id  ="form2" class="form form-horizontal">
+					<label for="question">2- Which science branch covers animals and animal life?</label><br />
+						<button class="btn btn-success btn-lg"id="Biology">Biology</button>
+						<button class="btn btn-success btn-lg correct"id="Zoology">Zoology</button><br>
+						<button class="btn btn-success btn-lg"id="Morphology">Morphology</button>
+						<button class="btn btn-success btn-lg"id="Physiology">Physiology</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-2 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-2" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-2" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-2" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+				</form>
+<!---------------------------------------------form 3---------------------------------------------->
+				<form  id  ="form3" class="form form-horizontal">
+					<label for="question">3- Pure water has a pH level of around what number?</label><br />
+						<button class="btn btn-success btn-lg correct" id="7">7</button>
+						<button class="btn btn-success btn-lg" id="5">5</button><br>
+						<button class="btn btn-success btn-lg" id="3">3</button>
+						<button class="btn btn-success btn-lg" id="9">9</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-3 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-3" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-3" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-3" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+				</form>
+<!---------------------------------------------form 4---------------------------------------------->
+				<form  id  ="form4" class="form form-horizontal">
+					<label for="question">4- How many hearts does an octopus have?</label><br />
+						<button class="btn btn-success btn-lg" id="2">2</button>
+						<button class="btn btn-success btn-lg correct" id="3">3</button><br>
+						<button class="btn btn-success btn-lg" id="5">5</button>
+						<button class="btn btn-success btn-lg" id="0">0</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-4 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-4" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-4" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-4" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+<!---------------------------------------------form 5---------------------------------------------->
+				</form>
+				<form  id  ="form5" class="form form-horizontal">
+					<label for="question">5- Persons with which blood group are called universal donors?</label><br />
+						<button class="btn btn-success btn-lg" id="Group-A">Group-A</button>
+						<button class="btn btn-success btn-lg" id="Group-B">Group-B</button><br>
+						<button class="btn btn-success btn-lg correct" id="Group-O">Group-O</button>
+						<button class="btn btn-success btn-lg" id="Group-AB">Group-AB</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-5 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-5" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-5" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-5" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+				</form>
+<!---------------------------------------------form 6---------------------------------------------->
+				<form  id  ="form6" class="form form-horizontal">
+					<label for="question">6- Which food is to blame for most cases of salmonella infection?</label><br />
+						<button class="btn btn-success btn-lg  correct" id="Chicken">Chicken</button>
+						<button class="btn btn-success btn-lg" id="Frozen-fish">Frozen-fish</button><br>
+						<button class="btn btn-success btn-lg" id="Pizza">Pizza</button>
+						<button class="btn btn-success btn-lg" id="Raw-nuts">Raw-nuts</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-6 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-6" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-6" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-6" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+				</form>
+<!---------------------------------------------form 7---------------------------------------------->
+				<form  id  ="form7" class="form form-horizontal">
+					<label for="question">7- Which country accounts for 70% of the world's platinum production?</label><br />
+						<button class="btn btn-success btn-lg correct" id="South-Africa">South-Africa</button>
+						<button class="btn btn-success btn-lg" id="Brazil">Brazil</button><br>
+						<button class="btn btn-success btn-lg" id="India">India</button>
+						<button class="btn btn-success btn-lg" id="Egypt">Egypt</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-7 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-7" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-7" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-7" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+				</form>
+<!---------------------------------------------form 8---------------------------------------------->
+				<form  id  ="form8" class="form form-horizontal">
+					<label for="question">8- What is the human body’s biggest organ?</label><br />
+						<button class="btn btn-success btn-lg" id="Spine">Spine</button>
+						<button class="btn btn-success btn-lg" id="Leg">Leg</button><br>
+						<button class="btn btn-success btn-lg correct" id="Skin">Skin</button>
+						<button class="btn btn-success btn-lg" id="Intestine">Intestine</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">result:  <span class="result-8 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-8" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-8" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-8" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+				</form>
+<!---------------------------------------------form 9---------------------------------------------->
+				<form  id  ="form9" class="form form-horizontal">
+					<label for="question">9- What is a straight line which touches a curve without crossing it?</label><br />
+						<button class="btn btn-success btn-lg" id="Line-segment">Line-segment</button>
+						<button class="btn btn-success btn-lg correct" id="Tangent">Tangent</button><br>
+						<button class="btn btn-success btn-lg" id="Beam">Beam</button>
+						<button class="btn btn-success btn-lg" id="ٍStraight-line">Straight-line</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-9 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-9" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-9" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-9" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+				</form>
+<!---------------------------------------------form 10---------------------------------------------->
+				<form  id  ="form10" class="form form-horizontal">
+					<label for="question">10- What gas is commonly used to fill floating Birthday balloons?</label><br />
+						<button class="btn btn-success btn-lg" id="Air">Air</button>
+						<button class="btn btn-success btn-lg correct" id="Helium">Helium</button><br>
+						<button class="btn btn-success btn-lg" id="Oxygen">Oxygen</button>
+						<button class="btn btn-success btn-lg" id="Nitrogen">Nitrogen</button>
+					<hr />
+					<div class="info">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="lead">Result: <span class="result-10 empty"></span></div>
+								<div class ="lead score">Score:<span id="score-10" class="empty"></span></div>
+							</div>
+							<div class="col-md-6">
+								<div class="lead your-answer">Your answer: <span id="your-answer-10" class="empty"></span></div>
+								<div class="lead correct-answer">Correct answer: <span id="correct-answer-10" class="empty"></span></div>
+							</div>
+						</div>
+					</div>
+				</form>
+<!----------------------------------------------- result page ------------------------------------>
+				<div class = "final-result">
+					<div class="final-title">
+						<h2 class="your-result">YOUR RESULT</h2>
+					</div>
+					<div class = "row">
+						<div class ="col-md-12">
+							<div class="congrats">Congrats!!<br /> You Scored <span class ="total"></span><br>
+								Out of <span class="final-score"></span> <br />  <span class="review">Use the back arrow to review your answers</span><br />
+								<span class="or">Or click the button to play again!</span><br />
+								<button class = "btn btn-default try-again">Try Again!</button>
+							</div>
+							<div class="fail">Sorry .. Minimum score is 50 marks <br />.. You scored <span class ="total"></span> <br>
+								Out of<span class="final-score"></span><br /> 
+								<button class = "btn btn-default try-again">Try Again!</button>
+							</div>
+							<div class="mess">It seems that you skipped some answer(s),<br /> use the back arrow to check.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
