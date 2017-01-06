@@ -86,7 +86,7 @@
 		});
 /**************************************** wnen try again btn is clicked ************************************************/
 		$('.try-again').click(function(){
-			$('.final-title, .col-md-12').children().hide();
+			$('.final-title, .final-info').children().hide();
 			$('button').prop('disabled',false);
 			$('#back').hide();
 			$('#next').slideDown(1500);
